@@ -1,27 +1,30 @@
 import "./App.css";
-import ImageDog from "./icon-dog.jpg";
+import SuperMarioImagem from "./images/Super-Mario-World.jpg";
 
 function App() {
-  const name = "Fulano Silva";
-
-  let _number = 3;
-
-  const dog_img =
-    "https://s2.glbimg.com/nvjFq8VRjyrpdQqaOeywz-5DFwY=/e.glbimg.com/og/ed/f/original/2021/08/27/captura_de_tela_2021-08-27_as_11.01.15.png";
-
-  function parOuImpar(number) {
-    return number % 2 === 0 ? "É par" : "É ímpar";
-  }
-
+  // let idade = 24;
   return (
     <div className="App">
-      {/*Comentário*/}
-      <img src={dog_img} alt="Descrição da imagem" />
-      {/* <img src = {ImageDog} alt="Descrição da imagem"/> */}
-      <h1>Olá Mundo! Feito por: {name}</h1>
-      <p>Bem vindos 3ºD ao react!</p>
-      <p>{_number} é um numero par ou ímpar?</p>
-      <p>R: {parOuImpar(_number)}</p>
+      <h1>Super Mario World</h1>
+
+      <div className="Sinopse">
+
+        <div className="imagem">
+          <img src={SuperMarioImagem} alt="Imagem do jogo Super Mario World" />
+        </div>
+
+        <div>
+          <p>
+            Na história de Super Mario World, Mario está em Dinossaur Land e
+            após libertar Yoshi, ele descobre que a ilha foi invadida por Bowser
+            (Rei Koopa) e seus filhos. Cabe então a Mario e Luigi, derrotar
+            Bowser, destruindo os castelos que ele e seus filhos construíram,
+            salvar a princesa e recuperar a Dinossaur Land.
+          </p>
+        </div>
+
+      </div>
+
     </div>
   );
 }
